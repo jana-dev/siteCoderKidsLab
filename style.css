@@ -1,0 +1,89 @@
+:root{
+    --primary-color: #18A5D9; 
+    --secondary-color: #FEC022;
+    --accent-color: #F55226;
+    --text-color: #F9F8F5;
+    --background-color: #53394D;
+    --title-font: "Lilita One", sans-serif;
+    --body-font: "Josefin Sans", sans-serif;
+}
+body{
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Menu topo*/
+.navbar{
+    --bs-navbar-padding-y: 0;
+    font-family: var(--body-font);
+}
+.navbar-brand{
+    margin: 0;
+    padding: 0 20px;
+}
+.nav-link{
+    width: 110px;
+    text-align: center;
+    padding: 0;
+}
+.navbar-collapse{
+    justify-content: space-between;
+}
+.navbar-nav .nav-link.active{
+    color: var(--secondary-color);
+}
+.navbar-nav .nav-link:hover{
+    color: var(--secondary-color);
+}
+.bg-dark{
+    --bs-bg-opacity: 0.9;
+}
+/*Menu topo*/
+
+/*Home*/
+#home{
+    height: 100vh;
+    background-image: url('./img/fundo-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.fundo-home{
+    background-color: rgba(0, 0, 0, 0.566);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    gap: 20px;
+    font-family: var(--body-font);
+}
+.fundo-home h2{
+    color: var(--secondary-color);
+}
+.bt-experimental{
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform 0.5s ease-in-out, background-color 0.4s ease-in-out;
+}
+.bt-experimental:hover{
+    background-color: var(--primary-color);
+    transform: scale(1.1);
+}
+/*Home*/
+
+/*Sobre*/
+#sobre{
+    height: 100vh;
+}
