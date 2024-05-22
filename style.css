@@ -7,32 +7,23 @@
     --title-font: "Lilita One", sans-serif;
     --body-font: "Josefin Sans", sans-serif;
 }
-body{
-    text-align: center;
-}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*Menu topo*/
-.navbar{
-    --bs-navbar-padding-y: 0;
+body{
     font-family: var(--body-font);
 }
+
+/*Menu topo*/
 .navbar-brand{
     margin: 0;
     padding: 0 20px;
 }
 .nav-link{
     width: 110px;
-    text-align: center;
-    padding: 0;
-}
-.navbar-collapse{
-    justify-content: space-between;
 }
 .navbar-nav .nav-link.active{
     color: var(--secondary-color);
@@ -47,7 +38,6 @@ body{
 
 /*Home*/
 #home{
-    height: 100vh;
     background-image: url('./img/fundo-home.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -86,4 +76,33 @@ body{
 /*Sobre*/
 #sobre{
     height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+}
+#sobre h3{
+    margin: 100px 0;
+}
+.cards-sobre{
+    gap: 40px;
+}
+.card-sobre{
+    width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-sobre:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-sobre img{
+    position: absolute;
+    top: -60px;
+    left: 25px;
+}
+#criatividade{
+    left: 40px;
+}
+.card-sobre h4{
+    margin-top: 80px;
 }
