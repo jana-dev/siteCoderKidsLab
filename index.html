@@ -17,15 +17,22 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/214be184a5.js" crossorigin="anonymous"></script>
     <title>Coder Kids Lab</title>
 </head>
 
 <body class="text-center">
 
+    <div class="whatsapp">
+        <a href="#whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
     <!--Inicio Menu-->
     <nav class="navbar navbar-expand-lg bg-dark fixed-top " data-bs-theme="dark">
         <div class="container-fluid ">
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -66,7 +73,7 @@
     <!--Inicio Sobre-->
     <section id="sobre" class="d-flex flex-column justify-content-center">
         <h3>Quais são os benefícios em aprender programação ?</h3>
-        <div class="cards-sobre d-flex flex-wrap justify-content-center">
+        <div class="cards-sobre d-flex flex-wrap justify-content-between">
             <div class="card-sobre" style="background-color: rgb(138, 224, 147);">
                 <img width="150" src="./img/logica2.png" alt="">
                 <h4>Lógica</h4>
@@ -92,6 +99,8 @@
             </div>
 
         </div>
+        <h4 class="subtitulo-video">Assista o vídeo a seguir para conhecer a professora e o curso</h4>
+        <video src="./video/videoteste.mp4" controls controlslist="nodownload"></video>
     </section>
     <!--Fim Sobre-->
 
@@ -104,12 +113,33 @@
                     <img width="300" src="./img/kit developer.png" alt="">
                 </div>
                 <div class="conteudo-kids">
-                    <h4>Kids Developer</h4>
+                    <h4>Kids Developer <span class="idade">8 a 11 anos</span></h4>
                     <div>
-                        <p>Idade ideal: de 8 a 11 anos</p>
-                        <p>Duração: 5 módulos média de 2 anos para conclusão</p>
-                        <p>Linguagens de programação: Blockly, HTML, CSS, Javascript, Lua, Gdscript, C# </p>
-                        <p>Softwares e plataformas: Code.org, Roblox Studio, Thunkable x, Gdevelop, Visual Studio Code, Godot, Unity </p>
+                        <p>Curso com foco em aprendizagem lúdica, os alunos começam aprendendo lógica com programação em
+                            blocos e avançam gradativamente para linguagens de programação profissional como Javascript
+                            e Lua.</p>
+                        <div class="cards-cursos d-flex">
+                            <div class="card-curso roblox">
+                                <div class="card-curso-conteudo">
+                                    Roblox Studio
+                                </div>
+                            </div>
+                            <div class="card-curso jogos-2d">
+                                <div class="card-curso-conteudo">
+                                    Jogos 2D
+                                </div>
+                            </div>
+                            <div class="card-curso aplicativos">
+                                <div class="card-curso-conteudo">
+                                    Apps
+                                </div>
+                            </div>
+                            <div class="card-curso sites">
+                                <div class="card-curso-conteudo">
+                                    Sites
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
@@ -119,12 +149,32 @@
 
             <div class="curso-teen">
                 <div class="conteudo-teen">
-                    <h4>Teen Developer</h4>
+                    <h4><span class="idade">12 a 16 anos</span> Teen Developer</h4>
                     <div>
-                        <p>Idade ideal: de 8 a 11 anos</p>
-                        <p>Duração: 5 módulos média de 2 anos para conclusão</p>
-                        <p>Linguagens de programação: Blockly, HTML, CSS, Javascript, Lua, Gdscript, C# </p>
-                        <p>Softwares e plataformas: Code.org, Roblox Studio, Thunkable x, Gdevelop, Visual Studio Code, Godot, Unity </p>
+                        <p>Curso com foco em desenvolver as principais habilidades para o futuro do adolescente! Desde
+                            criação de jogos, apps e sites até programação de IA e automação de tarefas.</p>
+                        <div class="cards-cursos d-flex justify-content-end">
+                            <div class="card-curso unity">
+                                <div class="card-curso-conteudo">
+                                    Unity
+                                </div>
+                            </div>
+                            <div class="card-curso python">
+                                <div class="card-curso-conteudo">
+                                    Python
+                                </div>
+                            </div>
+                            <div class="card-curso aplicativos">
+                                <div class="card-curso-conteudo">
+                                    Apps
+                                </div>
+                            </div>
+                            <div class="card-curso sites">
+                                <div class="card-curso-conteudo">
+                                    Sites
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
@@ -136,8 +186,138 @@
             </div>
         </div>
     </section>
-
     <!--Fim Cursos-->
+
+    <!--Inicio Projetos-->
+    <section id="projetos">
+        <h3>Conheça alguns projetos realizados em aula</h3>
+        <div class="cards-projetos d-flex justify-content-between flex-wrap">
+            <!--Card projeto-->
+            <div class="card" style="width: 16rem;">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Site Comando de Voz</h5>
+                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
+                        e Javascript</p>
+                    <a href="#" class="btn btn-primary">Visualizar</a>
+                </div>
+            </div>
+
+            <!--Card projeto-->
+            <div class="card" style="width: 16rem;">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Site Comando de Voz</h5>
+                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
+                        e Javascript</p>
+                    <a href="#" class="btn btn-primary">Visualizar</a>
+                </div>
+            </div>
+
+            <!--Card projeto-->
+            <div class="card" style="width: 16rem;">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Site Comando de Voz</h5>
+                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
+                        e Javascript</p>
+                    <a href="#" class="btn btn-primary">Visualizar</a>
+                </div>
+            </div>
+
+            <!--Card projeto-->
+            <div class="card" style="width: 16rem;">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Site Comando de Voz</h5>
+                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
+                        e Javascript</p>
+                    <a href="#" class="btn btn-primary">Visualizar</a>
+                </div>
+            </div>
+
+            <!--Card projeto-->
+            <div class="card" style="width: 16rem;">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Site Comando de Voz</h5>
+                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
+                        e Javascript</p>
+                    <a href="#" class="btn btn-primary">Visualizar</a>
+                </div>
+            </div>
+
+            <!--Card projeto-->
+            <div class="card" style="width: 16rem;">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Site Comando de Voz</h5>
+                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
+                        e Javascript</p>
+                    <a href="#" class="btn btn-primary">Visualizar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fim Projetos-->
+
+    <!--Inicio Depoimentos-->
+    <section id="depoimentos">
+        <div class="fundo-depoimentos">
+            <h3>Depoimentos de pais e alunos</h3>
+            <div class="depoimentos-conteudo">
+                <div class="depoimento">
+                    <div class="texto-depoimento">
+                        As aulas são muito legais e divertidas, já aprendi a criar meu próprio jogo no Roblox algo que
+                        pensei que nunca conseguiria e a prof é muito legal.
+                        <img class="img-depoimento img-depo-left" src="./img/unity.png" alt="">
+                    </div>
+                </div>
+
+                <div class="depoimento d-flex justify-content-end">
+                    <div class="texto-depoimento">
+                        As aulas são muito legais e divertidas, já aprendi a criar meu próprio jogo no Roblox algo que
+                        pensei que nunca conseguiria e a prof é muito legal.
+                        <img class="img-depoimento img-depo-right" src="./img/unity.png" alt="">
+                    </div>
+                </div>
+
+                <div class="depoimento">
+                    <div class="texto-depoimento">
+                        As aulas são muito legais e divertidas, já aprendi a criar meu próprio jogo no Roblox algo que
+                        pensei que nunca conseguiria e a prof é muito legal.
+                        <img class="img-depoimento img-depo-left" src="./img/unity.png" alt="">
+                    </div>
+                </div>
+
+                <div class="depoimento d-flex justify-content-end">
+                    <div class="texto-depoimento">
+                        As aulas são muito legais e divertidas, já aprendi a criar meu próprio jogo no Roblox algo que
+                        pensei que nunca conseguiria e a prof é muito legal.
+                        <img class="img-depoimento img-depo-right" src="./img/unity.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Fim Depoimentos-->
+
+    <section id="contato">
+        <div>
+            <p>Agende uma aula experimental para seu(sua) filho(a) e aproveite para tirar todas as dúvidas</p>
+            <div>
+                <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
+            </div>
+        </div>
+        <div class="contatos">
+            <a href="#whatsapp">(41) 998244791</a>
+            <a href="#email">coderkidslab_contato@gmail.com</a>
+        </div>
+        <div class="footer">
+            Site desenvolvido com <i class="fa-solid fa-heart"></i> pela professora Janaina, idealizadora da Coder Kids Lab
+        </div>
+    </section>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-:root{
-    --primary-color: #18A5D9; 
+:root {
+    --primary-color: #18A5D9;
     --secondary-color: #FEC022;
     --accent-color: #F55226;
     --text-color: #F9F8F5;
@@ -8,36 +8,67 @@
     --body-font: "Josefin Sans", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: var(--body-font);
 }
 
+.whatsapp {
+    font-size: 3rem;
+    position: fixed;
+    z-index: 9999;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.whatsapp a {
+    background-color: #29D469;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in-out;
+}
+.whatsapp a:hover{
+    background-color: #1fbe59;
+}
+
 /*Menu topo*/
-.navbar-brand{
+.navbar-brand {
     margin: 0;
     padding: 0 20px;
 }
-.nav-link{
+
+.nav-link {
     width: 110px;
 }
-.navbar-nav .nav-link.active{
+
+.navbar-nav .nav-link.active {
     color: var(--secondary-color);
 }
-.navbar-nav .nav-link:hover{
+
+.navbar-nav .nav-link:hover {
     color: var(--secondary-color);
 }
-.bg-dark{
+
+.bg-dark {
     --bs-bg-opacity: 0.9;
 }
+
 /*Menu topo*/
 
 /*Home*/
-#home{
+#home {
     background-image: url('./img/fundo-home.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -45,9 +76,11 @@ body{
     background-attachment: fixed;
 
 }
-.fundo-home{
+
+.fundo-home {
     background-color: rgba(0, 0, 0, 0.566);
     height: 100vh;
+    backdrop-filter: blur(2px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,10 +89,12 @@ body{
     gap: 20px;
     font-family: var(--body-font);
 }
-.fundo-home h2{
+
+.fundo-home h2 {
     color: var(--secondary-color);
 }
-.bt-experimental{
+
+.bt-experimental {
     background-color: var(--accent-color);
     padding: 10px 20px;
     border-radius: 15px;
@@ -67,56 +102,74 @@ body{
     text-decoration: none;
     transition: transform 0.5s ease-in-out, background-color 0.4s ease-in-out;
 }
-.bt-experimental:hover{
+
+.bt-experimental:hover {
     background-color: var(--primary-color);
     transform: scale(1.1);
 }
+
 /*Home*/
 
 /*Sobre*/
-#sobre{
-    height: 100vh;
+#sobre {
     max-width: 1000px;
     margin: auto;
 }
-#sobre h3{
+#sobre video{
+    padding-bottom: 50px;
+}
+.subtitulo-video{
+    margin: 40px 0;
+}
+#sobre h3 {
     margin: 100px 0;
 }
-.cards-sobre{
+
+.cards-sobre {
+    max-width: 1200px;
     gap: 40px;
 }
-.card-sobre{
+
+.card-sobre {
     width: 200px;
     padding: 10px;
     border-radius: 15px;
     position: relative;
     transition: box-shadow 0.3s ease-in-out;
 }
-.card-sobre:hover{
+
+.card-sobre:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.card-sobre img{
+
+.card-sobre img {
     position: absolute;
     top: -60px;
     left: 25px;
 }
-#criatividade{
+
+#criatividade {
     left: 40px;
 }
-.card-sobre h4{
+
+.card-sobre h4 {
     margin-top: 80px;
 }
 
-#cursos{
+#cursos {
     height: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     padding: 50px;
-    
+
 }
-#cursos h3{
+
+#cursos h3 {
     margin-bottom: 50px;
+    color: var(--text-color);
 }
-.curso-kids, .curso-teen{
+
+.curso-kids,
+.curso-teen {
     background-color: white;
     max-width: 1000px;
     margin: auto;
@@ -125,7 +178,24 @@ body{
     border-radius: 20px;
     padding: 20px;
 }
-.conteudo-kids{
+
+.idade {
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--text-color);
+}
+
+.javascript {
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.conteudo-kids {
     text-align: left;
     padding: 20px;
     width: 100%;
@@ -133,7 +203,8 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-.conteudo-teen{
+
+.conteudo-teen {
     text-align: right;
     padding: 20px;
     width: 100%;
@@ -141,6 +212,163 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-.curso-teen{
+
+.curso-teen {
     justify-content: end;
+}
+
+.cards-cursos {
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card-curso {
+    width: 120px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.roblox {
+    background-image: url('./img/roblox-logo.jpeg');
+    background-size: cover;
+}
+
+.jogos-2d {
+    background-image: url('./img/jogo2d.jpeg');
+    background-size: cover;
+}
+
+.aplicativos {
+    background-image: url('./img/app2.jpeg');
+    background-size: cover;
+}
+
+.sites {
+    background-image: url('./img/sites.jpeg');
+    background-size: cover;
+}
+
+.unity {
+    background-image: url('./img/unity.png');
+    background-size: cover;
+}
+
+.python {
+    background-image: url('./img/python.jpeg');
+    background-size: cover;
+}
+
+
+#projetos {
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#projetos h3 {
+    margin: 50px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-curso-conteudo {
+    text-align: center;
+    width: 100%;
+    backdrop-filter: blur(10px);
+
+}
+
+.card-img-top {
+    background-image: url('/img/python.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+}
+
+#depoimentos {
+    background-image: url('./img/fundo-depoimentos.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.fundo-depoimentos {
+    background-color: rgba(0, 0, 0, 0.679);
+    backdrop-filter: blur(2px);
+    padding-bottom: 40px;
+}
+
+#depoimentos h3 {
+    color: var(--text-color);
+    padding: 50px;
+}
+
+.depoimentos-conteudo {
+    margin-top: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.depoimento {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.img-depoimento {
+    z-index: 99;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+}
+
+.img-depo-left {
+    left: -60px;
+}
+
+.img-depo-right {
+    right: -60px
+}
+
+.texto-depoimento {
+    background-color: white;
+    text-align: left;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 500px;
+    position: relative;
+}
+
+#contato{
+    height: 300px;
+    background-color: rgb(39, 39, 39);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+.contatos{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.contatos a{
+    text-decoration: none;
+    color: #18A5D9;
+}
+.contatos a:hover{
+    color: var(--accent-color);
+}
+.fa-heart{
+    color: red;
+}
+.footer{
+    color: rgb(156, 156, 156);
 }
