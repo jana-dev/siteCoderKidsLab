@@ -23,8 +23,10 @@
 
 <body class="text-center">
 
-    <div class="whatsapp">
-        <a href="#whatsapp">
+    <div class="whatsapp position-fixed z-3 bottom-0 end-0 m-3">
+        <a  class="d-flex justify-content-center align-items-center"
+            target="_blank" 
+            href="https://api.whatsapp.com/send?phone=5541998244791&text=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20curso%20de%20programa%C3%A7%C3%A3o%20da%20Coder%20Kids%20Lab.">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
@@ -48,7 +50,7 @@
                     </a>
                     <a class="nav-link" href="#projetos">Projetos</a>
                     <a class="nav-link" href="#depoimentos">Depoimentos</a>
-                    <a class="nav-link" href="#contato">Contato</a>
+                    <a class="nav-link" href="#planos">Planos</a>
                 </div>
             </div>
         </div>
@@ -60,11 +62,11 @@
         <div class="fundo-home">
             <h1>Curso de Programação para crianças e adolescentes</h1>
             <h2>
-                <strong>Aprendizagem prática com projetos e diversão!</strong>
+                <strong>Aprendizado prático com projetos criativos!</strong>
             </h2>
-            <h3>
-                <strong>Criação de jogos, apps e sites!</strong>
-            </h3>
+            <h4>
+                <strong>Desenvolvimento de jogos, aplicativos e sites!</strong>
+            </h4>
             <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
         </div>
     </section>
@@ -72,34 +74,34 @@
 
     <!--Inicio Sobre-->
     <section id="sobre" class="d-flex flex-column justify-content-center">
-        <h3>Quais são os benefícios em aprender programação ?</h3>
+        <h3>Quais são os benefícios de aprender programação ?</h3>
         <div class="cards-sobre d-flex flex-wrap justify-content-between">
             <div class="card-sobre" style="background-color: rgb(138, 224, 147);">
                 <img width="150" src="./img/logica2.png" alt="">
                 <h4>Lógica</h4>
-                <p>O aluno irá desenvolver o raciocínio lógico durante as aulas</p>
+                <p>Os alunos desenvolvem o raciocínio lógico e resolução de problemas ao longo das aulas.</p>
             </div>
 
             <div class="card-sobre" style="background-color: rgb(234, 196, 114);">
                 <img id="criatividade" width="150" src="./img/criatividade2.png" alt="">
                 <h4>Criatividade</h4>
-                <p>Criação de personagens, layouts de apps e sites, aumentando a criatividade</p>
+                <p>Os alunos elaboram designs de Jogos, Aplicativos e Sites, aumentando a criatividade</p>
             </div>
 
             <div class="card-sobre" style="background-color: rgb(247, 141, 141);">
                 <img width="150" src="./img/foco.png" alt="">
                 <h4>Foco</h4>
-                <p>Com o mundo acelerado, durante as aulas o aluno irá precisar se concentrar e focar!</p>
+                <p>No mundo acelerado de hoje, as aulas ajudam os alunos a se concentrar e manter o foco.</p>
             </div>
 
             <div class="card-sobre" style="background-color: rgb(115, 198, 233);">
                 <img width="150" src="./img/oportunidades.png" alt="">
                 <h4>Oportunidades</h4>
-                <p>Abrirá oportunidades para o futuro, programação é uma ótima área para empreender</p>
+                <p>Abrir portas para o futuro, pois a programação é uma excelente área para empreender.</p>
             </div>
 
         </div>
-        <h4 class="subtitulo-video">Assista o vídeo a seguir para conhecer a professora e o curso</h4>
+        <h4 class="subtitulo-video">Assista ao vídeo a seguir para conhecer a professora e o curso</h4>
         <video src="./video/videoteste.mp4" controls controlslist="nodownload"></video>
     </section>
     <!--Fim Sobre-->
@@ -115,9 +117,7 @@
                 <div class="conteudo-kids">
                     <h4>Kids Developer <span class="idade">8 a 11 anos</span></h4>
                     <div>
-                        <p>Curso com foco em aprendizagem lúdica, os alunos começam aprendendo lógica com programação em
-                            blocos e avançam gradativamente para linguagens de programação profissional como Javascript
-                            e Lua.</p>
+                        <p>Curso focado em aprendizagem lúdica, onde os alunos começam aprendendo lógica com programação em blocos e avançam gradativamente para linguagens de programação profissional, como Javascript e Lua.</p>
                         <div class="cards-cursos d-flex">
                             <div class="card-curso roblox">
                                 <div class="card-curso-conteudo">
@@ -151,8 +151,7 @@
                 <div class="conteudo-teen">
                     <h4><span class="idade">12 a 16 anos</span> Teen Developer</h4>
                     <div>
-                        <p>Curso com foco em desenvolver as principais habilidades para o futuro do adolescente! Desde
-                            criação de jogos, apps e sites até programação de IA e automação de tarefas.</p>
+                        <p>Curso voltado para o desenvolvimento das principais habilidades do futuro! Os alunos aprenderão desde a criação de jogos, aplicativos e sites até a programação de IA e automação de tarefas.</p>
                         <div class="cards-cursos d-flex justify-content-end">
                             <div class="card-curso unity">
                                 <div class="card-curso-conteudo">
@@ -194,70 +193,66 @@
         <div class="cards-projetos d-flex justify-content-between flex-wrap">
             <!--Card projeto-->
             <div class="card" style="width: 16rem;">
-                <div class="card-img-top"></div>
+                <div class="card-img-top projeto-calculadora"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Site Comando de Voz</h5>
-                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
-                        e Javascript</p>
-                    <a href="#" class="btn btn-primary">Visualizar</a>
+                    <h5 class="card-title">Calculadora</h5>
+                    <p class="card-text">Criada com HTML CSS e Javascript os alunos aprendem a lógica de uma calculadora e vários conceitos importantes de programação.</p>
+                    <a target="_blank" href="https://jana-dev.github.io/calculadora-js/" class="btn btn-primary">Visualizar</a>
                 </div>
             </div>
 
             <!--Card projeto-->
             <div class="card" style="width: 16rem;">
-                <div class="card-img-top"></div>
+                <div class="card-img-top projeto-tarefas"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Site Comando de Voz</h5>
-                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
-                        e Javascript</p>
-                    <a href="#" class="btn btn-primary">Visualizar</a>
+                    <h5 class="card-title">App web de Tarefas</h5>
+                    <p class="card-text">Criado com HTML CSS e Javascript com integração de banco de dados Firebase. Adicione e exclua tarefas do dia a dia.</p>
+                    <a target="_blank" href="https://jana-dev.github.io/appTodo/" class="btn btn-primary">Visualizar</a>
                 </div>
             </div>
 
             <!--Card projeto-->
             <div class="card" style="width: 16rem;">
-                <div class="card-img-top"></div>
+                <div class="card-img-top projeto-selfie"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Site Comando de Voz</h5>
-                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
-                        e Javascript</p>
-                    <a href="#" class="btn btn-primary">Visualizar</a>
+                    <h5 class="card-title">Foto por voz</h5>
+                    <p class="card-text">Criada com HTML CSS e Javascript o aluno aprende a utilizar APIs mais avançadas para tirar foto com comando de voz.</p>
+                    <a target="_blank" href="https://jana-dev.github.io/projeto-selfie-por-voz/" class="btn btn-primary">Visualizar</a>
                 </div>
             </div>
 
             <!--Card projeto-->
             <div class="card" style="width: 16rem;">
-                <div class="card-img-top"></div>
+                <div class="card-img-top projeto-roblox"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Site Comando de Voz</h5>
-                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
-                        e Javascript</p>
-                    <a href="#" class="btn btn-primary">Visualizar</a>
+                    <h5 class="card-title">Jogo Roblox Studio</h5>
+                    <p class="card-text">Modelagem 3D e programação na linguagem LUA. (obs: pode conter alguns bugs pois ainda está em desenvolvimento)</p>
+                    <a target="_blank" href="https://www.roblox.com/games/11304181572/Obby-da-Prof-Jana" class="btn btn-primary">Visualizar</a>
                 </div>
             </div>
 
             <!--Card projeto-->
             <div class="card" style="width: 16rem;">
-                <div class="card-img-top"></div>
+                <div class="card-img-top projeto-2d"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Site Comando de Voz</h5>
-                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
-                        e Javascript</p>
-                    <a href="#" class="btn btn-primary">Visualizar</a>
+                    <h5 class="card-title">Jogo 2D</h5>
+                    <p class="card-text">Criação do Design do jogo e programação com lógica Javascript desenvolvido na engine GDevelop, ótimo para iniciantes.</p>
+                    <a target="_blank" href="https://gd.games/instant-builds/94effca2-0f4a-4f5c-b25c-d69023d7c6f8" class="btn btn-primary">Visualizar</a>
                 </div>
             </div>
 
             <!--Card projeto-->
             <div class="card" style="width: 16rem;">
-                <div class="card-img-top"></div>
+                <div class="card-img-top projeto-clima"></div>
                 <div class="card-body">
-                    <h5 class="card-title">Site Comando de Voz</h5>
-                    <p class="card-text">Criação de um site que tira uma foto com o comandod a voz. Utilizando HTMl CSS
-                        e Javascript</p>
-                    <a href="#" class="btn btn-primary">Visualizar</a>
+                    <h5 class="card-title">App web Clima</h5>
+                    <p class="card-text">Projeto avançado utilizando API OpenWeather para obter dados meteorológicos em tempo real. Com React e Tailwind.</p>
+                    <a target="_blank" href="https://jana-dev.github.io/weather-app-starter/" class="btn btn-primary">Visualizar</a>
                 </div>
             </div>
         </div>
+
+        <h6>* Durante todo o curso os alunos desenvolvem mais de 50 projetos diversos entre Jogos, apps e sites!</h6>
     </section>
     <!--Fim Projetos-->
 
@@ -303,21 +298,281 @@
     </section>
     <!--Fim Depoimentos-->
 
-    <section id="contato">
+    <!--Planos-->
+    <section id="planos">
+        <h3>Planos</h3>
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Individual</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Grupo</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Dúvidas</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <div class="d-flex justify-content-center planos">
+                    <div class="plano-individual">
+                        <div>
+                            <span class="preco">R$ 160,00</span>
+                            <span class="mes">/mês</span>
+                        </div>
+                        <div>
+                            <ul class="plano-beneficios">
+                                <li><i class="fa-solid fa-check"></i>25 reais por aula</li>
+                                <li><i class="fa-solid fa-check"></i>2 aulas por semana</li>
+                                <li><i class="fa-solid fa-check"></i>1h por aula</li>
+                                <li><i class="fa-solid fa-check"></i>Grupo de até 5 alunos</li>
+                                <li><i class="fa-solid fa-check"></i>Aulas ao vivo</li>
+                                <li><i class="fa-solid fa-check"></i>Pare quando quiser</li>
+                                <li><i class="fa-solid fa-check"></i>Certificado de conclusão</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
+                        </div>
+                    </div>
+                    <div class="plano-individual">
+                        <div>
+                            <span class="preco">R$ 280,00</span>
+                            <span class="mes">/mês</span>
+                        </div>
+                        <div>
+                            <ul class="plano-beneficios">
+                                <li><i class="fa-solid fa-check"></i>25 reais por aula</li>
+                                <li><i class="fa-solid fa-check"></i>2 aulas por semana</li>
+                                <li><i class="fa-solid fa-check"></i>1h por aula</li>
+                                <li><i class="fa-solid fa-check"></i>Grupo de até 5 alunos</li>
+                                <li><i class="fa-solid fa-check"></i>Aulas ao vivo</li>
+                                <li><i class="fa-solid fa-check"></i>Pare quando quiser</li>
+                                <li><i class="fa-solid fa-check"></i>Certificado de conclusão</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <div class="d-flex justify-content-center planos">
+                    <div class="plano-individual">
+                        <div>
+                            <span class="preco">R$ 120,00</span>
+                            <span class="mes">/mês</span>
+                        </div>
+                        <div>
+                            <ul class="plano-beneficios">
+                                <li><i class="fa-solid fa-check"></i>25 reais por aula</li>
+                                <li><i class="fa-solid fa-check"></i>2 aulas por semana</li>
+                                <li><i class="fa-solid fa-check"></i>1h por aula</li>
+                                <li><i class="fa-solid fa-check"></i>Grupo de até 5 alunos</li>
+                                <li><i class="fa-solid fa-check"></i>Aulas ao vivo</li>
+                                <li><i class="fa-solid fa-check"></i>Pare quando quiser</li>
+                                <li><i class="fa-solid fa-check"></i>Certificado de conclusão</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
+                        </div>
+                    </div>
+                    <div class="plano-individual">
+                        <div>
+                            <span class="preco">R$ 200,00</span>
+                            <span class="mes">/mês</span>
+                        </div>
+                        <div>
+                            <ul class="plano-beneficios">
+                                <li><i class="fa-solid fa-check"></i>25 reais por aula</li>
+                                <li><i class="fa-solid fa-check"></i>2 aulas por semana</li>
+                                <li><i class="fa-solid fa-check"></i>1h por aula</li>
+                                <li><i class="fa-solid fa-check"></i>Grupo de até 5 alunos</li>
+                                <li><i class="fa-solid fa-check"></i>Aulas ao vivo</li>
+                                <li><i class="fa-solid fa-check"></i>Pare quando quiser</li>
+                                <li><i class="fa-solid fa-check"></i>Certificado de conclusão</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Quais formas de pagamento são aceitas?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Os pagamentos serão sempre realizados via pix/boleto ou cartão de crédito a vista. A
+                                cobrança é feita sempre no início do mês.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Qual é a duração do curso?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                As aulas são fluídas de acordo com a individualidade de cada aluno para respeitar seu
+                                tempo de aprendizagem. Mas o cronograma foi criado para que em média 1 ano e meio a 2
+                                anos o aluno complete o curso.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                O aluno precisa ter computador ou pode ser pelo celular?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Para que a aula seja realizada é necessário ter uma internet com no mínimo 20 megas, um
+                                computador ou um notebook, mouse pode facilitar a aprendizagem, webcam caso seja
+                                possível e caso não seja um notebook o aluno precisa de algum headset ou fone de ouvido
+                                com microfone.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Qual a diferença entre o individual e em grupo?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Em ambos são os mesmos conteúdos, todos os alunos precisam participar ao vivo de todas as aulas. A única diferença é que em grupo o aluno terá atividades para desenvolver trabalhos em equipe e criar grandes amizades!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Precisa saber inglês?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Pode ficar tranquilo pois nas aulas a prof traduz sempre que necessário, com programação o aluno acaba aprendendo novas palavras em inglês e aumentando seu vocabulário.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                Meu filho quer tirar férias das aulas ou preciso parar por problemas financeiros, eu consigo?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sem problema algum! Aqui você pagará a mensalidade para liberar as aulas do mês. Quando precisar dar uma pausa é só não pagar que voltamos depois normalmente. Para aulas em grupo é definido uma pausa de férias em conjunto para não atrapalhar o andamento das aulas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                O curso tem certificado?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Sim ao final do curso se o aluno realizar todos os projetos de finalização dos módulos ele irá ganhar ao final do curso um certificado (com válidade vitalícia) o que é ótimo para provar seus conhecimentos e também irá ganhar um kit surpresa!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                Existe alguma bonificação extra para os alunos?
+                            </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                As aulas serão gameficadas, ou seja, ao final de cada aula, o aluno irá receber uma quantidade de moedinhas de 1 a 5 conforme critérios de: Foco e concentração, atividades realizadas em aula, criatividade, persistência e lógica de programação. Se o aluno conseguir uma quantidade mínima exigida de moedas ao final de cada módulo ele irá poder escolher entre ganhar um bonus na steam para comprar jogos ou trocar por Robux para usar no Roblox. (em média um módulo pode durar de 3 a 6 meses). 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                Qual é o cronograma do curso ?
+                            </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Os pais e alunos recebem o cronograma do curso referente ao curso escolhido (kids ou teen) após realizar a aula experimental. Como muitos pais não são da área de programação, ao final da aula experimental será enviado aos pais um arquivo PDF com todas as informações detalhadas sobre a grade curricular do curso, contendo todos os módulos, aulas, conhecimentos e duração.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                Como funciona a aula experimental?
+                            </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                               Após clicar no botão para agendar a aula, o pai responsável do aluno irá receber um calendário com os horários livres para agendar a aula. Via whatsapp e email será enviado todas as confirmações e o link para a aula no dia e horário agendados. O aluno precisa estar presente pois irá realizar uma atividade prática para conhecer a professora e poder decidir se ele deseja se matricular. Ao final da aula o responsável é chamado para tirar todas as dúvidas sobre o curso e receber o material completo com a grade curricular.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Planos-->
+
+    <!--Footer-->
+    <section id="footer">
         <div>
             <p>Agende uma aula experimental para seu(sua) filho(a) e aproveite para tirar todas as dúvidas</p>
-            <div>
-                <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
-            </div>
+          
         </div>
         <div class="contatos">
             <a href="#whatsapp">(41) 998244791</a>
             <a href="#email">coderkidslab_contato@gmail.com</a>
         </div>
         <div class="footer">
-            Site desenvolvido com <i class="fa-solid fa-heart"></i> pela professora Janaina, idealizadora da Coder Kids Lab
+            Site desenvolvido com <i class="fa-solid fa-heart"></i> pela professora Janaina, idealizadora da Coder Kids
+            Lab
         </div>
     </section>
+    <!--Footer-->
 </body>
 
 </html>
