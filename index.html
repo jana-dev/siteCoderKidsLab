@@ -18,6 +18,7 @@
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/214be184a5.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <title>Coder Kids Lab</title>
 </head>
 
@@ -32,25 +33,25 @@
     </div>
 
     <!--Inicio Menu-->
-    <nav class="navbar navbar-expand-lg bg-dark fixed-top " data-bs-theme="dark">
-        <div class="container-fluid ">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top p-0 m-0" data-bs-theme="dark">
+        <div class="container-fluid p-0 h-100">
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
-                <div class="navbar-nav align-items-center">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    <a class="nav-link" href="#sobre">Sobre</a>
-                    <a class="nav-link" href="#cursos">Cursos</a>
+            <div class="collapse navbar-collapse justify-content-center h-100" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center h-100">
+                    <a class="nav-link active p-0" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link p-0" href="#sobre">Sobre</a>
+                    <a class="nav-link p-0" href="#cursos">Cursos</a>
                     <a class="navbar-brand" href="#home">
                         <img width="100" src="./img/logo.png"
                             alt="Logo Curso de Programação para crianças e adolescentes Coder Kids Lab">
                     </a>
-                    <a class="nav-link" href="#projetos">Projetos</a>
-                    <a class="nav-link" href="#depoimentos">Depoimentos</a>
-                    <a class="nav-link" href="#planos">Planos</a>
+                    <a class="nav-link p-0" href="#projetos">Projetos</a>
+                    <a class="nav-link p-0" href="#depoimentos">Depoimentos</a>
+                    <a class="nav-link p-0" href="#planos">Planos</a>
                 </div>
             </div>
         </div>
@@ -59,22 +60,22 @@
 
     <!--Inicio Home-->
     <section id="home">
-        <div class="fundo-home">
-            <h1>Curso de Programação para crianças e adolescentes</h1>
+        <div class="fundo-home p-5">
+            <h1 class="mb-5">Curso de Programação para crianças e adolescentes</h1>
             <h2>
                 <strong>Aprendizado prático com projetos criativos!</strong>
             </h2>
             <h4>
                 <strong>Desenvolvimento de jogos, aplicativos e sites!</strong>
             </h4>
-            <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
+            <a class="bt-experimental mt-5" href="#whatsapp">Agendar aula experimental</a>
         </div>
     </section>
     <!--Fim Home-->
 
     <!--Inicio Sobre-->
-    <section id="sobre" class="d-flex flex-column justify-content-center">
-        <h3>Quais são os benefícios de aprender programação ?</h3>
+    <section id="sobre" class="d-flex flex-column justify-content-center align-items-center pb-5">
+        <h2>Quais são os benefícios de aprender programação ?</h2>
         <div class="cards-sobre d-flex flex-wrap justify-content-between">
             <div class="card-sobre" style="background-color: rgb(138, 224, 147);">
                 <img width="150" src="./img/logica2.png" alt="">
@@ -101,21 +102,21 @@
             </div>
 
         </div>
-        <h4 class="subtitulo-video">Assista ao vídeo a seguir para conhecer a professora e o curso</h4>
+        <h2 class="subtitulo-video">Assista ao vídeo a seguir para conhecer a professora e o curso</h4>
         <video src="./video/videoteste.mp4" controls controlslist="nodownload"></video>
     </section>
     <!--Fim Sobre-->
 
     <!--Inicio Cursos-->
-    <section id="cursos" class="d-flex flex-column justify-content-center">
-        <h3>Conheça nossos cursos</h3>
+    <section id="cursos" class="d-flex flex-column justify-content-center p-5">
+        <h2 class="mb-4">Conheça nossos cursos</h2>
         <div class="cursos">
             <div class="curso-kids">
                 <div class="img-curso">
                     <img width="300" src="./img/kit developer.png" alt="">
                 </div>
                 <div class="conteudo-kids">
-                    <h4>Kids Developer <span class="idade">8 a 11 anos</span></h4>
+                    <h3 class="d-flex align-items-center">Kids Developer <span class="idade mx-2">8 a 11 anos</span></h3>
                     <div>
                         <p>Curso focado em aprendizagem lúdica, onde os alunos começam aprendendo lógica com programação em blocos e avançam gradativamente para linguagens de programação profissional, como Javascript e Lua.</p>
                         <div class="cards-cursos d-flex">
@@ -141,7 +142,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="mt-5">
                         <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
                     </div>
                 </div>
@@ -149,7 +150,7 @@
 
             <div class="curso-teen">
                 <div class="conteudo-teen">
-                    <h4><span class="idade">12 a 16 anos</span> Teen Developer</h4>
+                    <h3 class="d-flex align-items-center justify-content-end"><span class="idade mx-2">12 a 16 anos</span> Teen Developer</h3>
                     <div>
                         <p>Curso voltado para o desenvolvimento das principais habilidades do futuro! Os alunos aprendem desde criação de jogos, aplicativos e sites até a programação de IA e automação de tarefas.</p>
                         <div class="cards-cursos d-flex justify-content-end">
@@ -175,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="mt-5">
                         <a class="bt-experimental" href="#whatsapp">Agendar aula experimental</a>
                     </div>
                 </div>
@@ -188,8 +189,8 @@
     <!--Fim Cursos-->
 
     <!--Inicio Projetos-->
-    <section id="projetos">
-        <h3>Conheça alguns projetos realizados em aula</h3>
+    <section id="projetos" class="d-flex flex-column justify-content-center align-items-center p-5">
+        <h2 class="mb-5">Conheça alguns projetos realizados em aula</h2>
         <div class="cards-projetos d-flex justify-content-between flex-wrap">
             <!--Card projeto-->
             <div class="card" style="width: 16rem;">
@@ -197,7 +198,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Calculadora</h5>
                     <p class="card-text">Criada com HTML CSS e Javascript os alunos aprendem a lógica de uma calculadora e vários conceitos importantes de programação.</p>
-                    <a target="_blank" href="https://jana-dev.github.io/calculadora-js/" class="btn btn-primary">Visualizar</a>
+                    <a target="_blank" href="https://jana-dev.github.io/calculadora-js/" class="bt-visualizar">Visualizar</a>
                 </div>
             </div>
 
@@ -207,7 +208,7 @@
                 <div class="card-body">
                     <h5 class="card-title">App web de Tarefas</h5>
                     <p class="card-text">Criado com HTML CSS e Javascript com integração de banco de dados Firebase. Adicione e exclua tarefas do dia a dia.</p>
-                    <a target="_blank" href="https://jana-dev.github.io/appTodo/" class="btn btn-primary">Visualizar</a>
+                    <a target="_blank" href="https://jana-dev.github.io/appTodo/" class="bt-visualizar">Visualizar</a>
                 </div>
             </div>
 
@@ -217,7 +218,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Foto por voz</h5>
                     <p class="card-text">Criada com HTML CSS e Javascript o aluno aprende a utilizar APIs mais avançadas para tirar foto com comando de voz.</p>
-                    <a target="_blank" href="https://jana-dev.github.io/projeto-selfie-por-voz/" class="btn btn-primary">Visualizar</a>
+                    <a target="_blank" href="https://jana-dev.github.io/projeto-selfie-por-voz/" class="bt-visualizar">Visualizar</a>
                 </div>
             </div>
 
@@ -227,7 +228,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Jogo Roblox Studio</h5>
                     <p class="card-text">Modelagem 3D e programação na linguagem LUA. (obs: pode conter alguns bugs pois ainda está em desenvolvimento)</p>
-                    <a target="_blank" href="https://www.roblox.com/games/11304181572/Obby-da-Prof-Jana" class="btn btn-primary">Visualizar</a>
+                    <a target="_blank" href="https://www.roblox.com/games/11304181572/Obby-da-Prof-Jana" class="bt-visualizar">Visualizar</a>
                 </div>
             </div>
 
@@ -237,7 +238,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Jogo 2D</h5>
                     <p class="card-text">Criação do Design do jogo e programação com lógica Javascript desenvolvido na engine GDevelop, ótimo para iniciantes.</p>
-                    <a target="_blank" href="https://gd.games/instant-builds/94effca2-0f4a-4f5c-b25c-d69023d7c6f8" class="btn btn-primary">Visualizar</a>
+                    <a target="_blank" href="https://gd.games/instant-builds/94effca2-0f4a-4f5c-b25c-d69023d7c6f8" class="bt-visualizar">Visualizar</a>
                 </div>
             </div>
 
@@ -247,7 +248,7 @@
                 <div class="card-body">
                     <h5 class="card-title">App web Clima</h5>
                     <p class="card-text">Projeto avançado utilizando API OpenWeather para obter dados meteorológicos em tempo real. Com React e Tailwind.</p>
-                    <a target="_blank" href="https://jana-dev.github.io/weather-app-starter/" class="btn btn-primary">Visualizar</a>
+                    <a target="_blank" href="https://jana-dev.github.io/weather-app-starter/" class="bt-visualizar">Visualizar</a>
                 </div>
             </div>
         </div>
