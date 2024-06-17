@@ -426,3 +426,19 @@ body {
 .footer{
     color: rgb(156, 156, 156);
 }
+
+
+@media (max-width: 576px) {
+
+    .fundo-home{
+        padding: 20px;
+    }
+
+    .cards-sobre{
+        justify-content: center;
+        gap: 60px;
+    }
+    .curso-kids{
+        display: block;
+    }
+}
